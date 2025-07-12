@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belive in you</title>
+</head>
+<body>
+
+    //settimeout and clearTimeout used for change olny one time and setInterval and clearInterval used for again and again changes
+    <h2>chai aur code </h2>
+    <button id="stop">stop</button>
+</body>
+     <script>
+
+        const kp =(function(){
+            console.log("kalu");
+            
+        })
+         // settimeout and cleartimeout
+        const changetext = function(){
+            document.querySelector('h2').innerHTML = "god's plane"
+        }
+         const chamgeMe =setTimeout(changetext, 2000)
+
+         document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(chamgeMe)
+            console.log("stopped");
+            
+         })
+
+        
+      
+     </script>
+</html>

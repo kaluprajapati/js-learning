@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belive in you</title>
+</head>
+<body>
+    <h2>chai aur you </h2>
+     <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+             
+     <script>
+  //    const changeit= setInterval(change,1000)
+         let letchange; 
+       const change = function(){
+          console.log("kalu");
+            const letchange = setInterval(5000)
+        }
+
+         
+        
+         document.querySelector('#start').addEventListener('click',function(){
+         
+         setInterval(change,1000)
+          console.log("start");
+        })
+
+         
+
+       //const set =  clearInterval(change)
+        document.querySelector('#stop').addEventListener('click',function(){
+         
+          clearInterval(letchange)
+          console.log("stop");
+        })
+
+       //  document.querySelector('#stop').addEventListener('click',function(){
+         // console.log("what s your Name");
+          //setInterval(1000)
+          //console.log("stop");
+          
+        //})
+        
+        
+     //   const change = function(){
+       //   console.log("kalu");
+          
+        //}
+          
+    //const changeit= setInterval(change,1000)
+
+   //  clearInterval(changeit)
+
+     </script>
+</html>
